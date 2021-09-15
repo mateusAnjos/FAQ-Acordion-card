@@ -1,0 +1,195 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  font-family:"Kumbh Sans", sans-serif;
+
+}
+
+body {
+    background: linear-gradient(  hsl(273, 75%, 66%) ,  hsl(240, 73%, 65%)) fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    margin: 2rem 0;
+}
+#corpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12rem;
+    width: 43%;
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 3rem;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 508px 554px;
+    background-position: -246px -168px;
+}
+        
+            
+
+#images{
+    background-image: url(./images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: -53px 33px;
+}
+
+#images img{
+    position: relative;
+    left: -4rem;
+    top: 8rem;
+    width: 32%;
+}
+.box{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-right: 4rem;
+
+}
+.boxcontent{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    align-items: center;
+    cursor: pointer;
+  
+}
+
+.boxcontent img{
+    margin-right: 8px;
+}
+.boxcontent span{
+ margin-bottom: 0.5rem;
+ margin-top: 0.5rem;
+ color: hsl(237, 12%, 33%);
+
+}
+.box p{
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+
+}
+
+.cardOpen span{
+font-weight: bold;
+}
+.cardOpen img{
+transform: rotate(180deg);
+}
+
+#isMobile{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+            #corpo {
+                width: 50%;
+
+     }
+
+}
+
+@media only screen  and (max-width: 1024px) {
+
+    #isDesktop{
+        display: none;
+    }
+
+    #corpo{
+        display: block;
+        width: 100%;
+        margin: 12rem 5rem;
+        background-color: white;
+        border-radius: 25px;
+        padding-bottom: 3rem;
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 90px 16px;
+
+    }
+    #images{
+        background-image: none;
+        margin-bottom: -5rem;
+        
+    }
+    #isMobile{
+        display: flex;
+
+    }
+    
+    #images img {
+        position: relative;
+        left: 5rem;
+        top: -9rem;
+        width: 67%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 56px;
+        margin-top: 0;
+    }
+    .box{
+    margin-left: 4rem;
+    }
+    .boxcontent span{
+        margin-bottom: 1rem;
+    
+       
+       }
+       .box p{
+           margin-bottom: 1rem;
+       }
+       
+}
+
+@media only screen and (max-width: 767px) {
+
+    #corpo{
+        background-size: 82%;
+        background-position: 26px 6px;
+            margin: 5rem 2rem;
+    }
+
+    h1{
+        font-size: 40px;
+        margin-top: 30%;
+    }
+
+    #images{
+        background-image: none;
+        margin-bottom: -9rem;
+    }
+
+    #images img {
+        position: relative;
+        left: 1.2rem;
+        top: -4.5rem;
+        width: 80%;
+    }
+    .box{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 12px;
+    }
+    .boxcontent span {
+        margin-right: 5px;
+    }
+
+    
+
+
+
+}
